@@ -1,0 +1,99 @@
+footer {
+    background-color: var(--secondary-bgcolor);
+    margin-top: 6rem;
+    padding-block: 2.5rem;
+    color: var(--primary-color, #ffffff);
+    font-family: var(--secondary-font-family);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+    gap: 2rem;
+}
+
+.copyright {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+footer #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: right;
+}
+
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+    opacity: 1;
+    color: var(--accent-color, #0076ff);
+}
+
+footer .social-media {
+    display: flex;
+    gap: 1.2rem;
+}
+
+footer .social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+footer .social-media a:hover {
+    transform: translateY(-3px); 
+}
+
+footer svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor; 
+    opacity: 0.8;
+    transition: opacity 0.2s ease, fill 0.2s ease;
+}
+
+footer .social-media a:hover svg {
+    opacity: 1;
+    fill: var(--accent-color, #0076ff);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column-reverse; /* Puts copyright text at the bottom */
+        text-align: center;
+        gap: 1.5rem;
+        padding-inline: 1rem;
+    }
+
+    .right-side {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    footer #contact {
+        text-align: center;
+    }
+    
+    .copyright {
+        font-size: 0.85rem;
+    }
+}

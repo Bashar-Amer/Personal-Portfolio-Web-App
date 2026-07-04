@@ -1,0 +1,48 @@
+#skills{
+    margin-top: 6rem;
+    padding-inline: 2rem;
+    padding-bottom: 4rem;
+}
+
+#skills h2{
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+
+#skills .topics{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    justify-content: center;
+}
+
+#skills .topic{
+    flex: 1 1 300px; 
+    max-width: 400px; 
+    padding: 1.5rem;
+    background-color: var(--secondary-bgcolor);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#skills .topic h3{
+    margin-bottom: 1.5rem;
+}
+
+#skills .topic_skills{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#skills .topic .skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skills .topic img{
+    height: 30px;
+    object-fit: contain;
+}
+

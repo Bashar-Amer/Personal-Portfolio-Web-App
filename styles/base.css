@@ -1,0 +1,45 @@
+
+* {
+    box-sizing: border-box;
+    font-family: var(--primary-font-family)
+}
+
+body{
+    background-color: var(--primary-bgcolor);
+}
+
+h1{
+    font-size: 3.5rem;
+    width: fit-content;
+    font-weight: bold;
+
+    color: var(--primary-color);
+}
+
+h2,
+.secondary-text-style
+{
+    font-size: 2.25rem;
+    width: fit-content;
+    font-weight: 600;
+}
+
+h3,
+.alternative-text-style{
+    font-size: 1.5rem;
+    width: fit-content;
+    font-weight: 500;
+}
+
+h2,
+h3,
+.secondary-text-style,
+.alternative-text-style{
+    color: var(--secondary-color);
+}
+
+.normal-text-style{
+    font-size: 1rem;
+    font-family: var(--secondary-font-family);
+    color: var(--third-color);
+}

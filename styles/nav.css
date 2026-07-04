@@ -1,0 +1,89 @@
+.main-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+    background-color: rgba(248, 249, 250, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container img {
+    width: 130px; 
+    aspect-ratio: 145 / 79;
+}
+
+.nav-container .links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-container .links a {
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    position: relative;
+    padding: 0.25rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-container .links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--alternative-bgcolor);
+    transition: width 0.3s ease;
+}
+
+.nav-container .links a:hover {
+    color: var(--alternative-bgcolor);
+}
+
+.nav-container .links a:hover::after {
+    width: 100%;
+}
+
+
+
+.nav-container .burger-menu {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-container .burger-menu:hover {
+    color: var(--alternative-bgcolor);
+}
+
+
+@media (max-width: 1023px) {
+    .nav-container .burger-menu {
+        display: block;
+    }
+    
+    .nav-container .links {
+        display: none;
+    }
+}
