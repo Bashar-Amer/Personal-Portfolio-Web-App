@@ -1,0 +1,83 @@
+/*============================
+     05. MAIN-HEADER
+============================*/
+.main-header {
+  height: 600px;
+  position: relative;
+}
+.main-header .header-content-fixed {
+  height: 600px;
+  background: url(../images/main-header.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+}
+.main-header .header-content-fixed:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transition: top 1s ease 0.3s, background 1s ease 0s;
+  -webkit-transition: top 1s ease 0.3s, background 1s ease 0s;
+  -moz-transition: top 1s ease 0.3s, background 1s ease 0s;
+  -o-transition: top 1s ease 0.3s, background 1s ease 0s;
+  -ms-transition: top 1s ease 0.3s, background 1s ease 0s;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+.main-header .header-content-fixed:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transition: bottom 1s ease 0.3s, background 1s ease 0s;
+  -webkit-transition: bottom 1s ease 0.3s, background 1s ease 0s;
+  -moz-transition: bottom 1s ease 0.3s, background 1s ease 0s;
+  -o-transition: bottom 1s ease 0.3s, background 1s ease 0s;
+  -ms-transition: bottom 1s ease 0.3s, background 1s ease 0s;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 1024px) {
+  .main-header .header-content-fixed {
+    position: relative;
+  }
+}
+.main-header:hover .header-content-fixed:before {
+  background: rgba(255, 255, 255, 0.9);
+}
+.main-header:hover .header-content-fixed:after {
+  background: rgba(255, 255, 255, 0.8);
+}
+.main-header .whoim {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  top: 100px;
+}
+.main-header .name {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
+  letter-spacing: 10px;
+}
+@media (max-width: 1030px) {
+  .main-header .name {
+    font-size: 3em;
+  }
+}
+.main-header .job {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+  letter-spacing: 4px;
+}

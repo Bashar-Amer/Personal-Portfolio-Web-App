@@ -1,0 +1,85 @@
+/*============================
+     06. MAIN-FOOTER 
+============================*/
+.main-footer {
+  padding-bottom: 40px;
+  font-size: 12px;
+  background: #323232;
+  position: relative;
+  border-top: 1px solid #505050;
+  border-bottom: 5px solid #505050;
+  color: white;
+}
+.main-footer .folow-me {
+  text-align: center;
+  background: #505050;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 150px;
+}
+.main-footer .back-to-top {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  text-decoration: none;
+  outline: none;
+  line-height: 30px;
+  text-align: center;
+  color: #7d7d7d;
+  background: #505050;
+}
+.main-footer .back-to-top:hover,
+.main-footer .back-to-top:focus {
+  color: #ffffff;
+}
+.main-footer p {
+  position: relative;
+}
+.main-footer:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+}
+.social-links {
+  padding: 0;
+  margin-bottom: 10px;
+}
+.social-links a,
+.social-links button
+ {
+  position: relative;
+  color: #ffffff;
+  display: block;
+  transition: background 0.8s ease 0s;
+  -webkit-transition: background 0.8s ease 0s;
+  -moz-transition: background 0.8s ease 0s;
+  -o-transition: background 0.8s ease 0s;
+  -ms-transition: background 0.8s ease 0s;
+  width: 30px;
+  text-decoration: none;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  background: #282828;
+}
+.social-links a i,
+.social-links button i
+ {
+  position: relative;
+}
+.social-links a:hover,
+.social-links button:hover
+ {
+  background: #ffffff;
+  color: #000000;
+}
